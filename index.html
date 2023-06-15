@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/icon.ico" type="image/x-icon">
+    <title>SAMRAT PRADHAN</title>
+    <!-- CSS LINKS -->
+
+    <!-- online -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+    bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/
+    Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- offline -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- CSS LINKS ENDS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .main{
+            height: 50vh;
+            color: var(--secondary-color);
+        }
+        .main h1{
+            font-family: Calisto MT;
+        }
+        .myimg{
+            animation: shake;
+            animation-duration: 2s;
+            --animate-delay: none; 
+            --animate-repeat: 10; 
+            --animate-iteration-count: infinite;
+        }
+        .nav-link.active{
+            color: var(--third-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <img src="res/logo.png" class="navbar-brand logo" alt="">
+            <button class="navbar-toggler" type="button" style="color: var(--secondary-color);" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">            
+                <i class="fa-solid fa-bars" ></i>            
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ABOUT.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SERVICES.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WORKS.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <img class="nav-link" src="res/moon.png" id="icon">
+                        <!-- <i class="nav-link fas fa-moon" id="icon"></i> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container main">
+        <div class="row">
+            <div class="col-sm-7 align-self-center">
+                <h1 style="font-size:xx-large;">
+                    <font style="color: var(--third-color);">Samrat</font> Pradhan
+                    <br>
+                    
+                </h1>
+                <h1 style="font-size:x-large;">
+                    I'm <font style="color: var(--third-color);"><span class="autoInput"></span></font>
+                </h1>
+            </div>
+            <div class="col-sm-5">
+                <!-- <img src="res/2.png" alt=""style="height: 80vh; position: absolute;"> -->
+                <img src="res/body-img.png" class="myimg animate"  style="height: 80vh;">
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid" style=" padding: 25px;">
+            <div class="row">
+                <div class="col-sm-12 justify-content-start">
+                    <a href="https://www.facebook.com/samrat.pradhan.5283"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://instagram.com/samratadamya?igshid=YmMTA2M2Y="><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://wa.me/qr/G6IJ7WINPRT7I1"><i class="fab fa-whatsapp fa-2x"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS LINKS -->
+
+    <!-- online -->
+
+    <!-- offline -->
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script> <!--fontawesome -->
+    <script src="js/jquery-3.5.0.min.js"></script> <!--jquery -->
+    <script src="js/bootstrap.min.js"></script> <!--Bootstrap -->
+    <script src="js/jquery.waypoints.min.js"></script> <!--waypoints -->
+    <script src="js/popper.min.js"></script> <!--popper -->
+    <script src="js/typed.min.js"></script>
+
+    <!-- JS LINKS ENDS -->
+    <script src="js.js"></script>
+
+    <script>
+        
+        var typed= new Typed(".autoInput",{
+            strings:["Developer","Designer","Freelancer"],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
+</body>
+</html>
